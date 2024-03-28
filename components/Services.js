@@ -5,7 +5,7 @@ import { cardData } from "@/constants/data";
 const Services = () => {
   return (
     <>
-      <section className="flex flex-col gap-4 md:px-36 py-10">
+      <section className="flex flex-col gap-4 md:px-36 px-2 py-10">
         <div className="sm:flex sm:justify-between sm:items-center">
           <div className="flex flex-col">
             <span className="text-5xl font-semibold">Services We Offer</span>
@@ -35,7 +35,7 @@ const Services = () => {
             </button>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-4 flex overflow-scroll p-2 gap-4">
+        <div className="md:grid md:grid-cols-4 flex overflow-scroll gap-4">
           {cardData.map((card,i)=>{
             return <ServiceCard cardData={card} />
           })}
