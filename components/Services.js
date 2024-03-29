@@ -16,7 +16,7 @@ const Services = () => {
             </span>
           </div>
           <div className="flex items-center justify-between gap-4">
-            <button>
+            <button className="hover:border-black hover:border hover:rounded-full hover:p-2 hover:bg-gradient-to-r from-[#FFFF00] to-[#00FFA7]">
                 <Image 
                     src="/left_arrowblack.png"
                     alt="left arrow icon"
@@ -24,7 +24,7 @@ const Services = () => {
                     height="15"
                 />
             </button>
-            <button className="border-black border rounded-full p-2">
+            <button className="border-black border rounded-full p-2 hover:bg-gradient-to-r from-[#FFFF00] to-[#00FFA7]">
                 <Image 
                     src="/right_arrowblack.png"
                     alt="right arrow icon"
@@ -35,7 +35,7 @@ const Services = () => {
             </button>
           </div>
         </div>
-        <div className="md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 flex  overflow-scroll gap-4">
+        <div className="md:grid md:grid-cols-4 sm:grid sm:grid-cols-2 flex overflow-scroll gap-4">
           {cardData.map((card,i)=>{
             return <ServiceCard cardData={card} />
           })}
