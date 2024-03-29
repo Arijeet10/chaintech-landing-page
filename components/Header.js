@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <>
       <nav className="sm:flex sm:items-center md:justify-between  bg-black py-6 sm:px-36">
-        <Link href="#" className="bg-black flex items-center justify-center ">
+        <Link href="/" className="bg-black flex items-center justify-center ">
             <Image 
                 src="/logo.png"
                 alt="website logo"

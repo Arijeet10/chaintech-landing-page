@@ -23,8 +23,8 @@ const ServiceCard = ({cardData}) => {
                         Join Development
                     </div>
                 </div>
-                <div className="h-[70%] border-y border-black flex flex-col gap-4 px-2 md:px-0 items-center justify-end">
-                    <div className="font-bold text-2xl text-center">
+                <div className="h-[70%] border-y border-black flex flex-col gap-4  items-center justify-end">
+                    <div className="font-bold text-2xl text-center px-6 sm:px-0">
                         {cardData.name}
                     </div>
                     <div>
