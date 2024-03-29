@@ -3,8 +3,8 @@ import Image from "next/image";
 const ServiceCard = ({cardData}) => {
     return ( 
         <>
-            <div className={` flex flex-col border-2 border-black rounded-lg ${cardData.color=="green" && "bg-green-100"} ${cardData.color=="cyan" && "bg-cyan-100"} ${cardData.color=="pink" && "bg-pink-100"} ${cardData.color=="purple" && "bg-purple-100"}`}>
-                <div className="h-[15%] flex items-center justify-start gap-2 pr-36 pl-4 py-6 md:pr-4">
+            <div className={`md:overflow-hidden flex flex-col border-2 border-black rounded-lg ${cardData.color=="green" && "bg-green-100"} ${cardData.color=="cyan" && "bg-cyan-100"} ${cardData.color=="pink" && "bg-pink-100"} ${cardData.color=="purple" && "bg-purple-100"}`}>
+                <div className="h-[15%] flex items-center justify-start gap-1 pr-36 pl-4 py-6 md:pr-4 ">
                     <div className="bg-black flex items-center justify-center rounded-full p-2">
                         <Image 
                             src="/C.png"
