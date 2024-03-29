@@ -35,7 +35,7 @@ const Services = () => {
             </button>
           </div>
         </div>
-        <div className="sm:grid md:grid-cols-4 sm:grid-cols-2 md:overflow-hidden justify-between flex overflow-scroll">
+        <div className="grid  grid-flow-col overflow-scroll gap-2 md:grid-cols-4 md:grid-flow-row md:overflow-hidden">
           {cardData.map((card,i)=>{
             return <ServiceCard cardData={card} />
           })}
